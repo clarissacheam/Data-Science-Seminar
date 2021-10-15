@@ -5,9 +5,10 @@ Project Title: Checking Effectiveness of Police Reform
 
 ## Theme 
 
-The question that we hope to answer with this project is whether police reform is effective. We are assessing and tracking police reform to check if there are improvements after reformative interventions like the COPA. Research into tracking police reform is essential in knowing whether substantial improvements are being made across the board, identifying neighborhoods that might require additional supervision/intervention, and checking for under-reporting of cases, and increase vigilance in these areas accordingly.
+Is police reform effective? We are assessing and tracking police reform to check if there are improvements after reformative interventions like the COPA. If Police reform has been effective, there should be an observable yet gradual decrease in counts of misconduct and changes in officer behavior and accountability patterns. Research into tracking police reform is essential in knowing whether substantial improvements are being made across the board, identifying neighborhoods that might require additional supervision/intervention, and checking for under-reporting of cases, and increasing vigilance in these areas accordingly.
 
-Our goal is to leverage the information available on types of complaints made by both civilians and officers alike against police officers, based on neighborhood demographics, complaint outcomes, the extent of disciplining, and information on subsequent investigation to gain insight on if and how accountability is being enforced.
+Our goal is to leverage the information available on types of complaints made by both civilians and officers alike against police officers, based on neighborhood, complaint outcomes, the extent of disciplining, and information on subsequent investigation to gain insight on if and how accountability is being enforced.
+
 
 ## Summary of Checkpoint 1
 
