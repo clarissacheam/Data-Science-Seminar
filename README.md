@@ -1,5 +1,5 @@
 # Data Pirates
-## Citizens Police Database Project 
+## Citizens Police Database Project - Tracking Effectiveness of Police Reform 
 
 ## Theme
 
