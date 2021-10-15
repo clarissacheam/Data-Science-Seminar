@@ -4,6 +4,7 @@
 ## Theme
 
 The theme of this project is assessing and tracking police reform to check if there are natural improvements or if they are instances of under-reporting. Research into tracking police reform is essential in knowing whether substantial improvements are being made across the board, identifying neighborhoods that might require additional supervision/intervention, and checking for under-reporting cases, and increase vigilance in these areas accordingly.
+
 Our goal is to leverage the information available on types of complaints made by both civilians and officers alike against police officers, based on neighborhood demographics, complaint outcomes,the extent of disciplining, and information on subsequent investigation to gain insight on if and how accountability is being enforced.
 
 ## Checkpoint 1 - SQL Analytics
