@@ -2,7 +2,7 @@
 
 By: Kavya Jaganathan, Clarrisa Cheam and Ayushi Mishra
 
-Project Title: Checking Effectiveness of Police Reform
+Project Title: Tracking Effectiveness of Police Reform
 
 ## Theme 
 
