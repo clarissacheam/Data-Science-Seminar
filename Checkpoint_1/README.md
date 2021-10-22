@@ -1,6 +1,6 @@
 # Data Pirates
 
-By: Kavya Jaganathan, Clarrisa Cheam and Ayushi Mishra
+By: Kavya Jaganathan, Clarissa Cheam and Ayushi Mishra
 
 Project Title: Tracking Effectiveness of Police Reform
 
