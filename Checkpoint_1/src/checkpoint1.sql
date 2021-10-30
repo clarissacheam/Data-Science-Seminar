@@ -62,6 +62,10 @@ FROM cte
 WHERE rn <= 3
 ORDER BY name, rn ;
 
+
+---MOST PREVALENT ALLEGATIONS
+select category, count(*) * 100/ (select count(*) from pre_copa) as percentage from pre_copa group by category order by count(*) desc;
+
 -- QUESTION 1 ENDS
 
 -- QUESTION 2
@@ -79,6 +83,10 @@ FROM cte
 WHERE rn <= 3
 ORDER BY name, rn ;
 
+---MOST PREVALENT ALLEGATIONS
+select category, count(*) * 100/ (select count(*) from post_copa) as percentage from post_copa group by category order by count(*) desc;
+
+
 --QUESTION 2 ENDS
 
 -- QUESTION 3
@@ -89,6 +97,50 @@ ORDER BY name, rn ;
 SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
 FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
 WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id ORDER BY d_o.id;
+
+
+--STATISTICS OF FINAL OUTCOME FOR SUSTAINED ALLEGATIONS
+WITH cte AS
+  ( SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
+FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
+WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id ORDER BY d_o.id
+  )
+SELECT final_outcome, count(*) *100/ (select count(*) from cte) as percentage from cte group by final_outcome order by count(*) desc;
+
+
+---STATISTICS FOR CATEGORY BASED SUSTAINED ALLEGATION WHERE FINAL OUTCOME IS NO ACTION TAKEN
+WITH cte AS
+  ( SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
+FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
+WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id AND lower(final_outcome)='no action taken' ORDER BY d_o.id
+  )
+SELECT category,allegation_name, count(*) *100/ (select count(*) from cte) as percentage from cte group by allegation_name,category order by count(*) desc;
+
+---STATISTICS FOR CATEGORY USE OF FORCE SPECIFIC SUSTAINED ALLEGATION WHERE FINAL OUTCOME IS NO ACTION TAKEN
+WITH cte AS
+  ( SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
+FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
+WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id AND lower(final_outcome)='no action taken' ORDER BY d_o.id
+  )
+SELECT category,allegation_name, count(*) *100/ (select count(*) from cte) as percentage from cte where lower(category)='use of force' group by category,allegation_name order by category desc,count(*) desc;
+
+
+---FINDING OFFICERS WITH HIGHEST NUMBER OF CASES
+WITH cte AS
+  ( SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
+FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
+WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id ORDER BY d_o.id
+  )
+select first_name,last_name,count(*) as allegation_name_count from cte group by first_name,last_name order by count(*) desc;
+
+---GETTING PUNISHMENT TAKEN AGAINST THE OFFICER
+WITH cte AS
+  ( SELECT d_o.id,d_o.first_name,d_o.last_name, dac.category, dac.allegation_name, doa.final_outcome
+FROM data_officer d_o,data_officerallegation doa, data_allegationcategory dac
+WHERE d_o.sustained_count>0 AND doa.officer_id=d_o.id AND doa.allegation_category_id=dac.id ORDER BY d_o.id
+  )
+select first_name,last_name,final_outcome,count(*) from cte where first_name='Jerome' and last_name='Finnigan'group by final_outcome,first_name,last_name order by count(*) desc;
+
 
 -- QUESTION 3 ENDS
 
@@ -156,5 +208,3 @@ FROM postcopa_allegation_findings GROUP BY category
 SELECT prefindings.category, precopa/49.9 as pre_copa_allegations_per_year, postcopa/0.78 pre_copa_allegations_per_year
 FROM prefindings,postfindings
 WHERE prefindings.category=postfindings.category;
-
--- QUESTION 4 ENDS
