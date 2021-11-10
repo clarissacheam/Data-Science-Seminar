@@ -1,0 +1,60 @@
+{
+	"name": "Most Prevalent Misconducts",
+	"children": [{
+			"name": "Use of Force",
+			"children": [{
+					"name": "Physical Violence",
+					"value": 20982192
+				},
+				{
+					"name": "Weapons",
+					"value": 3497032
+				},
+				{
+					"name": "Threats",
+					"value": 749364
+				}
+			]
+		},
+		{
+			"name": "Operation/Personnel Violations",
+			"children": [{
+					"name": "Failure to Identify",
+					"value": 499576
+				},
+				{
+					"name": "Unfit for Duty",
+					"value": 499576
+				},
+				{
+					"name": "Neglect of Duty",
+					"value": 249788
+				},
+				{
+					"name": "Accident - Property Damage",
+					"value": 249788
+				},
+				{
+					"name": "Misuse of Department Equipment",
+					"value": 249788
+				}
+			]
+		},
+		{
+			"name": "False Arrest",
+			"children": [{
+					"name": "Improper Detention",
+					"value": 249788
+				},
+				{
+					"name": "Planting Controlled Substances",
+					"value": 999152
+				},
+				{
+					"name": "Illegal Arrest / False Arrest",
+					"value": 249788
+				}
+			]
+		}
+	]
+}
