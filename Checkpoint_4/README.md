@@ -21,4 +21,4 @@ In this checkpoint, we test the hypothesis, "Are certain officers the cause of h
 
 ## How to Run Files 
 
-Follow the instructions in src.pdf to run the colab notebooks linked within. The analysis of this checkpoint is found in Findigns.pdf
+Follow the instructions in src.pdf to run the colab notebooks linked within. The analysis of this checkpoint is found in Findings.pdf
