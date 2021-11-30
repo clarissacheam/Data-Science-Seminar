@@ -6,9 +6,9 @@ Project Title: Tracking Effectiveness of Police Reform
 
 ## Theme
 
-> In this checkpoint, we interact with the misconducts occurring over the years and investigate why reforms identified in previous checkpoints are failing.
+> In this checkpoint we explore the text content available in the tables data_attachmentnarrative and data_allegation. We study both these tables since data_attachmentnarrative table's text content gives an account of the allegation, along with the victim perspective in terms of words uttered by the accused to them, tone/demeanor of accused that they observed, etc. whereas the data_allegation table's text content gives a report written by an officer without much of the victim's direct words.
 
-## Summary of Checkpoint 3 
+## Summary of Checkpoint 5 
 The question we hope to answer:
 
 - What was the sentiment in the CPDB complaint data pre major reforms ( before 2016 ) and post major reforms?
