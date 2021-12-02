@@ -23,7 +23,7 @@ Our goal is to leverage the information available on types of complaints made by
 - What are the trends in complaint count overall and per complaint category over time and what are the effects on these counts with the introduction of various reforms? We can visualise this data as line graphs with reference lines indicating the introduction of each reform introduced over time. 
 - What is the percentage of Total Count of Complaints for each Category of final_findings ( ”SU”, ”NA”, ”NS” etc.) broken down by Disciplinary action?
 
-## Interactive Visualisation 
+## Checkpoint 3 -Interactive Visualisation 
 
 > With interactive visualisation, we would like to interact with the complaints and disciplinary action taken over the years to understand how accountability is being relayed in each neighbourhood in the form of heat maps, line graphs, etc.
 
