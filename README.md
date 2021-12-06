@@ -25,14 +25,26 @@ Our goal is to leverage the information available on types of complaints made by
 
 ## Checkpoint 3 -Interactive Visualisation 
 
-> With interactive visualisation, we would like to interact with the complaints and disciplinary action taken over the years to understand how accountability is being relayed in each neighbourhood in the form of heat maps, line graphs, etc.
+> In this checkpoint, we interact with the misconducts occurring over the years and investigate why reforms identified in previous checkpoints are failing.
+
+- What misdemeanours were prevalent in each year and do they decrease or increase? Study the trend and reform affected in further detail following the previous checkpoint. We can do this by using a bar chart race to illustrate the leading complaint category trends up till 2018.
+- Why are targeted reforms failing? Are these reforms as targeted as they claim to be? For this we can use circle packaging visualization to view the misconducts and the sub categories within it.
 
 ## Checkpoint 4 - Graph Analytics
 
-> We hope to construct an entity relationship map where the entities are police units - which would comprise of beats and police officers, neighbourhoods, types of complaints and visualise the relations between these entities.
+> In this checkpoint, we test the hypothesis, ”Are certain officers the cause of high misconduct counts in a certain district, or is it a unit-wide issue? If so, how does this affect reform choices”. We test this hypothesis to investi- gate whether reform needs to be implemented unit-wide or would retraining/removing certain officers improve the situation. To this end we will be interacting with officer nodes, unit ids and coaccusal counts. This checkpoint will further expand our focus from “Tracking police reform” to “Tracking and Nudging Police reform towards efficiency”.
+
+- What is the distribution of allegation counts and trr counts in units? Is the distribution uniformly distributed indicating a unit wide problem or is the distribution skewed showing presence of certain problematic officers?
+- If certain officers are the problem in their respective units we want to magnify this network and investigate which officers are the ring leaders, and at the center of co-accusals, influencing other officers?
+
+Based on insights derived from these questions, an informed reform plan can be made where units can be revamped and problematic officers can be removed from the force.
 
 ## Checkpoint 5 - Natural Language Processing
 
-> In this checkpoint, we hope to explore the complaint reports using sentiment analysis to add to the observations of neighborhood demographics to gain insight on whether there is a bias towards certain social-economic groups or races, and if reform should be targeted towards specific officers or precincts in the neighborhood require reformative training as a whole. 
+> In this checkpoint we explore the text content available in the tables data attachmentnarrative and data allegation. We study both these tables since data attachmentnarrative table’s text content gives an account of the allegation, along with the victim perspective in terms of words uttered by the accused to them, tone/demeanor of accused that they observed, etc. whereas the data allegation table’s text content gives a report written by an officer without much of the victim’s direct words.
+
+The question we hope to answer:
         
-> Elaborating on that, if the sentiment of a certain Complaint Report seems negative, and the neighbourhood that the complaint report belongs to is largely low-income households, we can make an observation that there's economic discrimination in play and reformative training as a whole is required for the precinct in that neighbourhood. 
+- What was the sentiment in the CPDB complaint data pre major reforms ( before 2016 ) and post major reforms? We use sentiment analysis to find out the same.
+
+Note: Major reforms here indicate reforms like COPA and introduction of TRR
